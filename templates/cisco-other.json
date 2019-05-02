@@ -1,0 +1,49 @@
+{
+    "order": 0,
+    "version": 10000,
+    "index_patterns": "cisco-other-*",
+    "settings": {
+        "index": {
+            "number_of_shards": 3,
+            "number_of_replicas": 1,
+            "refresh_interval": "10s",
+            "codec": "best_compression"
+        }
+    },
+    "mappings": {
+        "numeric_detection": true,
+        "properties": {
+            "@timestamp":  {
+                "type": "date"
+            },
+            "@version": {
+                "type": "keyword"
+            },
+            "fingerprint": {
+                "type": "text"
+            },
+            "manufacturer": {
+                "type": "text"
+            },
+            "facility": {
+                "type": "text"
+            },
+            "facility_full": {
+                "type": "keyword"
+            },
+            "facility_mnemonic": {
+                "type": "text"
+            },
+            "log_sequence": {
+                "type": "long"
+            },
+            "severity_level": {
+                "type": "text"
+            },
+            "message": {
+                "type": "keyword"
+            },
+            "tags": {
+                "type": "keyword"
+            }
+        }
