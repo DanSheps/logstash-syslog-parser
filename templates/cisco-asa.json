@@ -1,0 +1,245 @@
+{
+    "order": 0,
+    "version": 10000,
+    "index_patterns": "cisco-other-*",
+    "settings": {
+        "index": {
+            "number_of_shards": 3,
+            "number_of_replicas": 1,
+            "refresh_interval": "10s",
+            "codec": "best_compression"
+        }
+    },
+    "mappings": {
+        "numeric_detection": true,
+        "properties": {
+            "@timestamp":  {
+                "type": "date"
+            },
+            "@version": {
+                "type": "keyword"
+            },
+            "fingerprint": {
+                "type": "text"
+            },
+            "manufacturer": {
+                "type": "text"
+            },
+            "platform": {
+                "type": "text"
+            },
+            "facility": {
+                "type": "text"
+            },
+            "facility_full": {
+                "type": "keyword"
+            },
+            "facility_mnemonic": {
+                "type": "text"
+            },
+            "log_sequence": {
+                "type": "long"
+            },
+            "severity_level": {
+                "type": "text"
+            },
+            "severity_pri": {
+                "type": "text"
+            },
+            "sysloghost": {
+                "type": "keyword"
+            },
+            
+            "message": {
+                "type": "keyword"
+            },
+            "tags": {
+                "type": "keyword"
+            },
+            "action": {
+                "type": "text"
+            },
+            "protocol": {
+                "type": "text"
+            },
+            "duration": {
+                "type": "date",
+                "format": "HH:mm:ss"
+            },
+            
+            "interface": {
+                "type": "text"
+            },
+            
+            "dst.interface": {
+                "type": "text"
+            },
+            "dst.address": {
+                "type": "ip"
+            },
+            "dst.original.address": {
+                "type": "ip"
+            },
+            "dst.original.port": {
+                "type": "int"
+            },
+            "dst.port": {
+                "type": "int"
+            },
+            "dst.geoip.ip": {
+                "type": "ip"
+            },
+            "dst.geoip.city_name": {
+                "type": "keyword"
+            },
+            "dst.geoip.continent_code": {
+                "type": "keyword"
+            },
+            "dst.geoip.country_code2": {
+                "type": "keyword"
+            },
+            "dst.geoip.country_code3": {
+                "type": "keyword"
+            },
+            "dst.geoip.country_name": {
+                "type": "keyword"
+            },
+            "dst.geoip.postal_code": {
+                "type": "keyword"
+            },
+            "dst.geoip.region_code": {
+                "type": "keyword"
+            },
+            "dst.geoip.region_name": {
+                "type": "keyword"
+            },
+            "dst.geoip.location.lat": {
+                "type": "float"
+            },
+            "dst.geoip.location.lon": {
+                "type": "float"
+            },
+            "dst.geoip.latitude": {
+                "type": "float"
+            },
+            "dst.geoip.longitude": {
+                "type": "float"
+            },
+            "dst.geoip.time_zone": {
+                "type": "keyword"
+            },
+            "dst.geoip.timezone": {
+                "type": "keyword"
+            },
+            "src.interface": {
+                "type": "text"
+            },
+            "src.address": {
+                "type": "ip"
+            },
+            "src.original.address": {
+                "type": "ip"
+            },
+            "src.original.port": {
+                "type": "int"
+            },
+            "src.port": {
+                "type": "int"
+            },
+            "src.geoip.ip": {
+                "type": "ip"
+            },
+            "src.geoip.city_name": {
+                "type": "keyword"
+            },
+            "src.geoip.continent_code": {
+                "type": "keyword"
+            },
+            "src.geoip.country_code2": {
+                "type": "keyword"
+            },
+            "src.geoip.country_code3": {
+                "type": "keyword"
+            },
+            "src.geoip.country_name": {
+                "type": "keyword"
+            },
+            "src.geoip.postal_code": {
+                "type": "keyword"
+            },
+            "src.geoip.region_code": {
+                "type": "keyword"
+            },
+            "src.geoip.region_name": {
+                "type": "keyword"
+            },
+            "src.geoip.location.lat": {
+                "type": "float"
+            },
+            "src.geoip.location.lon": {
+                "type": "float"
+            },
+            "src.geoip.latitude": {
+                "type": "float"
+            },
+            "src.geoip.longitude": {
+                "type": "float"
+            },
+            "src.geoip.time_zone": {
+                "type": "keyword"
+            },
+            "src.geoip.timezone": {
+                "type": "keyword"
+            },
+            
+            "ciscotag": {
+                "type": "text"
+            },
+            "policy_id": {
+                "type": "text"
+            },
+            "hashcode1": {
+                "type": "text"
+            },
+            "hashcode2": {
+                "type": "text"
+            },
+            "reason": {
+                "type": "text"
+            },
+            
+            
+            "drop.type": {
+                "type": "text"
+            },
+            "drop.rate.id": {
+                "type": "int"
+            },
+            "drop.rate.current.average": {
+                "type": "int"
+            },
+            "drop.rate.current.burst": {
+                "type": "int"
+            },
+            "drop.rate.max.average": {
+                "type": "int"
+            },
+            "drop.rate.max.burst": {
+                "type": "int"
+            },
+            
+            "icmp.type": {
+                "type": "int"
+            },
+            "icmp.code": {
+                "type": "int"
+            },
+            "icmp.code_xlated": {
+                "type": "int"
+            },
+            "icmp.seq_num": {
+                "type": "int"
+            }
+        }
+    }
+}

@@ -25,6 +25,9 @@
             "manufacturer": {
                 "type": "text"
             },
+            "platform": {
+                "type": "text"
+            },
             "facility": {
                 "type": "text"
             },
