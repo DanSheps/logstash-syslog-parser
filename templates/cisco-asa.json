@@ -81,10 +81,10 @@
                 "type": "ip"
             },
             "dst.original.port": {
-                "type": "int"
+                "type": "integer"
             },
             "dst.port": {
-                "type": "int"
+                "type": "integer"
             },
             "dst.geoip.ip": {
                 "type": "ip"
@@ -141,10 +141,10 @@
                 "type": "ip"
             },
             "src.original.port": {
-                "type": "int"
+                "type": "integer"
             },
             "src.port": {
-                "type": "int"
+                "type": "integer"
             },
             "src.geoip.ip": {
                 "type": "ip"
@@ -213,32 +213,32 @@
                 "type": "text"
             },
             "drop.rate.id": {
-                "type": "int"
+                "type": "integer"
             },
             "drop.rate.current.average": {
-                "type": "int"
+                "type": "integer"
             },
             "drop.rate.current.burst": {
-                "type": "int"
+                "type": "integer"
             },
             "drop.rate.max.average": {
-                "type": "int"
+                "type": "integer"
             },
             "drop.rate.max.burst": {
-                "type": "int"
+                "type": "integer"
             },
             
             "icmp.type": {
-                "type": "int"
+                "type": "integer"
             },
             "icmp.code": {
-                "type": "int"
+                "type": "integer"
             },
             "icmp.code_xlated": {
-                "type": "int"
+                "type": "integer"
             },
             "icmp.seq_num": {
-                "type": "int"
+                "type": "integer"
             }
         }
     }
